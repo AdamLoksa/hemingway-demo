@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("page-content").innerHTML='\n   <section class="hero">\n      <h1 class="title">Vítejte v Phill\'s Twenty7!</h1>\n      <p class="text">Jsme místem pro Vaši rychlou ranní kávu, snídani, pracovní oběd nebo romantickou večeri.</p>\n   </section>   \n   '})();
