@@ -1,0 +1,23 @@
+{
+  "name": "hemingway-demo",
+  "version": "1.0.0",
+  "description": "Simple coctail bar webpage created with JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamLoksa/hemingway-demo.git"
+  },
+  "author": "Adam Loksa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamLoksa/hemingway-demo/issues"
+  },
+  "homepage": "https://github.com/AdamLoksa/hemingway-demo#readme",
+  "devDependencies": {
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
+  }
+}
