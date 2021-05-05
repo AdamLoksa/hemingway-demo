@@ -1,0 +1,35 @@
+// Footer always at bottom
+body {
+   height: 100vh;
+   margin: 0;
+   display: flex; 
+   flex-direction:column; 
+}
+
+.footer {
+   width: 100%;
+   margin-top: auto; 
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   
+   &__list {
+      display: flex;
+      margin: 1rem 0;
+   }
+ 
+   &__icon {
+      max-width: 65px;
+   }
+
+   &__item {
+      margin: 0 0.5rem;
+      transition: transform ease-in-out 0.25s;
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+}
