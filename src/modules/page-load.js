@@ -1,12 +1,48 @@
-const loadPage = (() => {
-   const webpageContent = document.getElementById('page-content');
+import { renderNavBar } from './nav';
+import { renderFooter } from './footer';
+import { renderHomePage } from './homepage';
+import { renderBarMenu } from './menu';
+import { renderGallery } from './gallery';
+import { renderContactPage } from './contact';
 
-   webpageContent.innerHTML = `
-   <section class="hero">
-      <h1 class="title">Vítejte v Phill's Twenty7!</h1>
-      <p class="text">Jsme místem pro Vaši rychlou ranní kávu, snídani, pracovní oběd nebo romantickou večeri.</p>
-   </section>   
-   `;
-})();
+// website init
+const init = function() {
+   // insert navbar on page
+   renderNavBar();
 
-export { loadPage };
+   // insert homepage content
+   renderHomePage();
+
+   // insert footer on page
+   renderFooter();
+}
+
+// Load page content
+function loadPage(value) {
+   const pageContent = document.getElementById('page-content');
+   clearPageContent(pageContent);
+
+   switch (value) {
+      case 'home':
+         renderHomePage();
+         break;
+      case 'menu':
+         renderBarMenu();
+         break;
+      case 'gallery':
+         renderGallery();
+         break;
+      case 'contact':
+         renderContactPage();
+         break;
+   }
+}
+
+// Clear page content
+function clearPageContent(element) {
+   while(element.firstChild) {
+      element.removeChild(element.firstChild);
+  }
+}
+
+export { init, loadPage };

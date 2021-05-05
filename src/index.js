@@ -1,3 +1,4 @@
-import { loadPage } from './modules/page-load';
+import { init } from './modules/page-load';
+import './style.scss'
 
-loadPage;
+init();
